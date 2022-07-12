@@ -1,0 +1,265 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(-45deg,gray,black,gray);
+    background-image: url(background.jpg);
+    background-size: auto;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
+    background-color: black;
+}
+
+h1{
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+p{
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 55px;
+    margin: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.card-1{
+    width: 350px;
+    height: 200px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card-1:hover{
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    
+}
+
+.card-1 .card-wrapper::before{
+    content:'';
+    position:absolute;
+    height: 50px;
+    width: 50px;
+    display:block; 
+    transition: 0.5s;    
+}
+
+.card-wrapper{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 4px;
+    margin:0;
+    transition: 0.5s;
+}
+
+.card-1 .card-wrapper h2{
+    font-size: 25px;
+    text-transform: uppercase;
+    color:rgb(0, 0, 0);
+    padding-left:6px;
+    padding-right: 6px;
+    transition: 0.5s;
+    background: linear-gradient(90deg,rgb(255, 111, 0),red,rgb(173, 0, 0));
+}
+
+.card-1:hover .card-wrapper::before{
+    height: 100px;
+    width: 250px;
+    opacity: 1;
+    border: 3px solid transparent;
+    border-image: linear-gradient(90deg,rgb(255, 111, 0),red,rgb(173, 0, 0));
+    border-image-slice: 1;  
+    transition: 0.4s;  
+    
+}
+
+.card-1:hover .card-wrapper h2{
+    text-transform: uppercase;
+    font-size: 38px;
+    letter-spacing: 2px;
+    background:-webkit-linear-gradient(45deg,rgb(255, 183, 0),rgb(255, 111, 0),red,rgb(173, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s; 
+}
+
+.card-2{
+    width: 350px;
+    height: 200px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;  
+}
+
+.card-2:hover{
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 8px;
+}
+
+.card-2 .card-wrapper::before{
+    content:'';
+    position:absolute;
+    height: 100px;
+    width: 100px;
+    display:block;
+    transition: 0.4s;  
+}
+
+.card-2 .card-wrapper{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    transition: 0.4s;
+}
+
+.card-2 .card-wrapper h2{
+    font-size: 25px;
+    text-transform: uppercase;
+    color:rgb(0, 0, 0);
+    padding-left:6px;
+    padding-right: 6px;
+    transition: 0.5s;
+    background:linear-gradient(-90deg, rgb(0, 42, 5),rgb(0, 138, 16),rgb(0, 222, 26),rgb(68, 255, 0)) ;
+}
+
+.card-2:hover .card-wrapper::before{
+    height: 100px;
+    width: 250px;
+    opacity: 1;
+    border: 3px solid transparent;
+    border-image: linear-gradient(-90deg, rgb(0, 42, 5),rgb(0, 138, 16),rgb(0, 222, 26),rgb(68, 255, 0));
+    border-image-slice: 1;     
+}
+
+.card-2:hover .card-wrapper h2{
+    text-transform: uppercase;
+    font-size: 38px;
+    letter-spacing: 4px;
+    background:-webkit-linear-gradient(45deg,rgb(136, 255, 0),rgb(68, 255, 0),rgb(0, 222, 26),rgb(0, 138, 16),rgb(0, 42, 5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-3{
+    width: 350px;
+    height: 200px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card-3:hover{
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 8px;
+}
+    
+.card-3 .card-wrapper::before{
+    content:'';
+    position:absolute;
+    height: 100px;
+    width: 100px;
+    display:block;
+    transition: 0.5s;    
+}
+
+.card-3 .card-wrapper{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 4px;
+    margin:0;
+    transition: 0.5s;
+}
+
+.card-3 .card-wrapper h2{
+    font-size: 25px;
+    text-transform: uppercase;
+    color:rgb(0, 0, 0);
+    padding-left:6px;
+    padding-right: 6px;
+    transition: 0.5s;
+    background: linear-gradient(-90deg,rgb(0, 0, 95),rgb(0, 56, 120),rgb(0, 106, 206),rgb(0, 221, 255));
+}
+
+.card-3:hover .card-wrapper::before{
+    height: 100px;
+    width: 250px;
+    opacity: 1;
+    border: 3px solid transparent;
+    border-image: linear-gradient(-90deg,rgb(0, 0, 95),rgb(0, 56, 120),rgb(0, 106, 206),rgb(0, 221, 255));
+    border-image-slice: 1;     
+    
+}
+
+.card-3:hover .card-wrapper h2{
+    text-transform: uppercase;
+    font-size: 38px;
+    letter-spacing: 2px;
+    background:-webkit-linear-gradient(45deg,rgb(93, 255, 231),rgb(0, 221, 255),rgb(0, 106, 206),rgb(0, 56, 120),rgb(0, 0, 95),rgb(0, 0, 26));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+@keyframes backgroundTransition{
+
+    0%{
+        background-position: 0% 80%;
+    }
+
+    50%{
+        background-position: 80% 100%;
+    }
+
+    100%{
+        background-position: 0% 90%;
+    }
+}
